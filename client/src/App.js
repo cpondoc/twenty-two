@@ -57,7 +57,7 @@ state = {
         })}
         <hr />
         <div className="footer">
-          <p>read my why <a href="why.txt">here</a>. see code here.</p>
+          <p>read my why <a href="why.txt">here</a>. see code <a href="https://github.com/cpondoc/twenty-two">here</a>.</p>
         </div>
       </div>
     );
