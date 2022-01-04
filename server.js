@@ -21,7 +21,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 // Create a GET route
 app.get('/blog', (req, res) => { 
     // Grab data from Google sheet and display
-    let url = 'https://api.sheety.co/751c84b27e51cd2b85e8401267fbce1c/personalBlogSheet/blog';
+    let url = 'https://api.sheety.co/dbdc32ef3c6e8f80bf5696ebe5021e7a/twentyTwoBlog/blog';
     fetch(url)
         .then((response) => response.json())
         .then(json => {
