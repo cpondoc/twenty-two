@@ -1,16 +1,25 @@
 // Setting up fetch and express
 import fetch from "node-fetch";
 import express from "express";
-import path from "path";
+import path, {dirname} from "path";
+//const express = require('express');
 
 // Express initialization and port number
 const app = express();
 const port = process.env.PORT || 5000;
 
+import { fileURLToPath } from 'url'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+console.log(__filename);
+console.log(__dirname);
+
+
 // Setting up for deployment
-/*const __dirname = path.resolve();
 app.use(express.static(path.resolve(__dirname, "./client/build")));
-app.get("*", function (request, response) {
+
+/*app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });*/
 
